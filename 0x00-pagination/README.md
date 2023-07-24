@@ -1,6 +1,6 @@
 # 0x00. Pagination
 
-0. Simple helper function
+##0. Simple helper function
 
 Write a function named index_range that takes two integer arguments page and page_size.
 
@@ -8,7 +8,7 @@ The function should return a tuple of size two containing a start index and an e
 
 Page numbers are 1-indexed, i.e. the first page is page 1.
 
-1. Simple pagination
+##1. Simple pagination
 
 Copy index_range from the previous task and the following class into your code
 
@@ -19,7 +19,7 @@ Use assert to verify that both arguments are integers greater than 0.
 Use index_range to find the correct indexes to paginate the dataset correctly and return the appropriate page of the dataset (i.e. the correct list of rows).
 If the input arguments are out of range for the dataset, an empty list should be returned.
 
-2. Hypermedia pagination
+##2. Hypermedia pagination
 
 Replicate code from the previous task.
 
@@ -35,7 +35,7 @@ Make sure to reuse get_page in your implementation.
 
 You can use the math module if necessary.
 
-3. Deletion-resilient hypermedia pagination
+##3. Deletion-resilient hypermedia pagination
 
 The goal here is that if between two queries, certain rows are removed from the dataset, the user does not miss items from dataset when changing page.
 
